@@ -5,11 +5,11 @@ import java.util.List;
 
 public class PostOrder {
     public static void main(String[] args) {
-        InOrder inOrder = new InOrder();
+        PostOrder postOrder = new PostOrder();
         TreeNode subLeft = new TreeNode(3);
         TreeNode right = new TreeNode(2,subLeft,null);
         TreeNode root = new TreeNode(1,null,right);
-        inOrder.inorderTraversal(root);
+        postOrder.postOrderTraversal(root);
     }
 
     private  void traverse(TreeNode node, List<Integer> list){
