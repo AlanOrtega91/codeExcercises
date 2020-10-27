@@ -1,6 +1,6 @@
 package binaryTree.traverse;
 
-import sun.reflect.generics.tree.Tree;
+import binaryTree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

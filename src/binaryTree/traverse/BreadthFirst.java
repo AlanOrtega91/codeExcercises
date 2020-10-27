@@ -1,7 +1,8 @@
 package binaryTree.traverse;
 
+import binaryTree.TreeNode;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class BreadthFirst {
