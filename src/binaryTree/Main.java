@@ -1,25 +1,23 @@
 package binaryTree;
 
-import binaryTree.traverse.BreadthFirst;
-
 public class Main {
     public TreeNode getRoot() {
         return root;
     }
 
-    TreeNode root;
+    TreeNode<Number> root;
 
     public Main(){
-        TreeNode root = new TreeNode(5);
-        root.left = new TreeNode(4);
-        root.left.left = new TreeNode(11);
-        root.left.left.left = new TreeNode(7);
-        root.left.left.right = new TreeNode(2);
+        TreeNode<Number> root = new TreeNode<Number>(5);
+        root.left = new TreeNode<Number>(4);
+        root.left.left = new TreeNode<Number>(11);
+        root.left.left.left = new TreeNode<Number>(7);
+        root.left.left.right = new TreeNode<Number>(2);
 
-        root.right = new TreeNode(8);
-        root.right.left = new TreeNode(13);
-        root.right.right = new TreeNode(4);
-        root.right.right.right = new TreeNode(1);
+        root.right = new TreeNode<Number>(8);
+        root.right.left = new TreeNode<Number>(13);
+        root.right.right = new TreeNode<Number>(4);
+        root.right.right.right = new TreeNode<Number>(1);
 
         this.root = root;
     }

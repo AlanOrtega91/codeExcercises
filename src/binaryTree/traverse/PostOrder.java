@@ -8,13 +8,13 @@ import java.util.List;
 public class PostOrder {
     public static void main(String[] args) {
         PostOrder postOrder = new PostOrder();
-        TreeNode subLeft = new TreeNode(3);
-        TreeNode right = new TreeNode(2,subLeft,null);
-        TreeNode root = new TreeNode(1,null,right);
+        TreeNode<Integer> subLeft = new TreeNode<>(3);
+        TreeNode<Integer> right = new TreeNode<>(2, subLeft, null);
+        TreeNode<Integer> root = new TreeNode<>(1, null, right);
         postOrder.postOrderTraversal(root);
     }
 
-    private  void traverse(TreeNode node, List<Integer> list){
+    private  void traverse(TreeNode<Integer> node, List<Integer> list){
         if (node == null){
             return;
         }
@@ -30,7 +30,7 @@ public class PostOrder {
         list.add(node.val);
     }
 
-    public List<Integer> postOrderTraversal(TreeNode root) {
+    public List<Integer> postOrderTraversal(TreeNode<Integer> root) {
         List<Integer> list = new ArrayList<>();
 
         traverse(root,list);

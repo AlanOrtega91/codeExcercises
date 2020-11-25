@@ -10,11 +10,11 @@ public class PathSum extends Main {
         System.out.println(hasPathSum);
     }
 
-    public boolean hasPathSum(TreeNode root, int sum) {
+    public boolean hasPathSum(TreeNode<Number> root, int sum) {
         if (root == null){
             return false;
         }
-        int newSum = sum-root.val;
+        int newSum = sum-(int)root.val;
 
         if (newSum == 0 && root.left==null && root.right==null){
             return true;

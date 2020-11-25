@@ -8,9 +8,9 @@ import java.util.List;
 public class BreadthFirst {
     private class TreeNodeQueueNode {
         int level;
-        TreeNode node;
+        TreeNode<Integer> node;
 
-        public TreeNodeQueueNode( TreeNode node, int level) {
+        public TreeNodeQueueNode(TreeNode<Integer> node, int level) {
             this.level = level;
             this.node=node;
         }
@@ -18,15 +18,15 @@ public class BreadthFirst {
 
     public static void main(String[] args) {
         BreadthFirst breathFirst = new BreadthFirst();
-        TreeNode node15 = new TreeNode(15);
-        TreeNode node7 = new TreeNode(7);
-        TreeNode node9 = new TreeNode(9);
-        TreeNode node20 = new TreeNode(20,node15,node7);
-        TreeNode root = new TreeNode(3,node9,node20);
+        TreeNode<Integer> node15 = new TreeNode<>(15);
+        TreeNode<Integer> node7 = new TreeNode<>(7);
+        TreeNode<Integer> node9 = new TreeNode<>(9);
+        TreeNode<Integer> node20 = new TreeNode<>(20, node15, node7);
+        TreeNode<Integer> root = new TreeNode<>(3, node9, node20);
         breathFirst.levelOrder(root);
     }
 
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrder(TreeNode<Integer> root) {
         List<List<Integer>> list=new ArrayList<>();
         List<TreeNodeQueueNode> queue= new ArrayList<>();
         int lastLevel = 0;

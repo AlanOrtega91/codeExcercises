@@ -9,7 +9,7 @@ public class MaxDepth  extends Main {
         maxDepth.maxDepth(maxDepth.getRoot());
     }
 
-    public int maxDepth(TreeNode root){
+    public int maxDepth(TreeNode<Number> root){
         if (root==null){
             return 0;
         }

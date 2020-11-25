@@ -8,13 +8,13 @@ import java.util.List;
 public class InOrder extends TraverseBinaryTree{
     public static void main(String[] args) {
         InOrder inOrder = new InOrder();
-        TreeNode subLeft = new TreeNode(3);
-        TreeNode right = new TreeNode(2,subLeft,null);
-        TreeNode root = new TreeNode(1,null,right);
+        TreeNode<Integer> subLeft = new TreeNode<Integer>(3);
+        TreeNode<Integer> right = new TreeNode<Integer>(2,subLeft,null);
+        TreeNode<Integer> root = new TreeNode<Integer>(1,null,right);
         inOrder.inorderTraversal(root);
     }
 
-    private  void traverse(TreeNode node, List<Integer> list){
+    private  void traverse(TreeNode<Integer> node, List<Integer> list){
         if (node == null){
             return;
         }
@@ -30,7 +30,7 @@ public class InOrder extends TraverseBinaryTree{
         }
     }
 
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode<Integer> root) {
         List<Integer> list = new ArrayList<>();
 
         traverse(root,list);
